@@ -1,0 +1,449 @@
+﻿/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, div, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, option, select, th, td, img, background { border: none; border: 0; margin: 0; padding: 0; color: #555; font: 14px/1.5 "\5fae\8f6f\96c5\9ed1","\5B8B\4F53","\9ED1\4F53",arial,sans-serif,'VideoJS'; outline: none; resize: none; word-break: break-all; }
+body {
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: url(../../Photos/bg.jpg) repeat;
+    width: 100%;
+    height: 100%;
+}
+  
+  
+  
+nav {
+  margin: 0;
+  padding: 0;
+}
+#logo a {
+    float: left;
+    display: initial;
+    font-weight: 400;
+    font-size: 43px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 0px 12px;
+}
+.sub-headder h6 a {
+    font-size: 13px;
+    position: absolute;
+    top: 3px;
+    border: none;
+    border-left: 2px solid #fff;
+    left: 89px;
+    padding-left: 7px;
+    line-height: 21px;
+    color: #ffc107;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* Since we'll have the "ul li" "float:left"
+* we need to add a clear after the container. */
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Removing padding, margin and "list-style" from the "ul",
+* and adding "position:reltive" */
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+
+/* Positioning the navigation items inline */
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+
+
+/* Styling the links */
+
+nav ul li a {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+nav ul li ul li:hover {
+  background: #f8f9fa;
+}
+
+.menu li .drop-text:hover {
+  color: #000;
+  border: none;
+}
+/* Background color change on Hover */
+/*.menu li.active a,.menu li a:hover{border-bottom: 1px solid #d4d4d4;}*/
+.menu li a:hover {
+  opacity: 0.8;
+  color:#000;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+/* Hide Dropdowns by Default
+* and giving it a position of absolute */
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 33px;
+  background: #000;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: -1px 1px 5px black;
+}
+
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover>ul {
+  display: inherit;
+}
+
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+nav ul ul li a {
+  color: #fff;
+  padding: 5px 10px;
+  display: block;
+  background: transparent;
+}
+
+
+/* Second, Third and more Tiers	
+* We move the 2nd and 3rd etc tier dropdowns to the left
+* by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+li>a:only-child:after {
+  content: '';
+}
+
+a.reqe-button {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media(max-width: 800px) {
+  nav a {
+    font-size: 13px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+	
+  }
+  nav {
+    margin: 0;
+  }
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    padding: 6px 17px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    float: right;
+    background-color: #5facbe;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .menu .toggle {
+    float: none;
+    text-align: center;
+    margin: auto;
+    max-width: 138px;
+    padding: 10px 18px;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .menu .toggle:hover {
+    color: #fff;
+    opacity: .8;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  .toggle:hover {
+    color: #000;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+  }
+  label.toggle.toogle-2 {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #fff;
+  }
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked+ul {
+    display: block;
+    background: #fff;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+  }
+  /* Change menu item's width to 100% */
+ nav ul li {
+    display: block;
+    width: 100%;
+    padding:2px 0;
+  }
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: transparent;
+  }
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #FFF;
+    font-size: 15px;
+  }
+  /* 
+nav ul li ul li .toggle,
+nav ul ul a {
+background-color: #212121;
+} */
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+  /* Hide menus on hover */
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+  nav a {
+    color: #000;
+    font-size: 15px;
+  }
+  .menu li.active a,
+  .menu li a:hover {
+    background: transparent;
+  }
+}
+
+@media all and (max-width: 568px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 14px;
+  }
+}
+
+@media all and (max-width: 320px) {
+  nav a,
+  .menu .toggle,
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    font-size: 13px;
+  }
+}
+
+  
+  
+  
+  
+  
+#center{
+	width: 1150px;
+	height: 85%;
+	margin-left: 200px;
+    background: #FFFFFF;
+    }
+
+.center.im {
+    width: 100%;
+    height: 200px;
+    background: url(../../Photos/12.png) cover;
+   
+}
+ .f20
+    {margin-left: 30px;
+    	font-size: 20px;
+    }
+    
+.describe{
+	width: 1000px;
+	height: 85px;
+	margin-left: 30px;margin-left: 30px;
+
+    margin-bottom: 50px;
+    background: #eee;
+  
+}
+.item .title{
+	color: #f69;;
+    margin-left:30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.info{
+	margin-left: 30px;
+}
+.item img{
+	
+	width: 80px;
+	height: 80px;
+margin-left: 30px;
+}
+
+
+
+/* 点赞*/
+.dianzan{
+	
+	width:1150px;
+	height:300px;
+	margin-left: 200px;
+	margin-right: 150px;
+	margin-top:30px;
+    background: #FFFFFF;
+}
+
+/*点赞*/
+
+            
+
+	/*定义动画*/
+			@keyframes donghua{
+				0%{background-position:left;}
+				100%{background-position:right;}
+			}
+			
+			
+			.out{
+				width: 600px;
+				/*border:1px solid red;*/
+				margin: 50px auto;
+				padding: 20px;
+				
+			}
+			.out .row{
+				/*border-bottom: 1px solid #C7C7C7;*/
+			}
+			.out .btn{
+				cursor: pointer;/*放上去变成小手*/
+				display: inline-block;
+			}
+        
+			.out .btn i{
+				display: inline-block;
+                width: 100px;
+                height: 100px;
+                background: url(../../Photos/点赞图片.png);
+                margin-left: 200px;
+                vertical-align: middle;/*对齐*/
+			}
+			.out .btn.on i{
+				/*执行动画，停留在最后一帧上fowards,steps走28步*/
+				animation :donghua 2s forwards steps(28);
+			}
+			.out .btn b{
+			
+			vertical-align: middle;
+			}
+
+
+.on.di {
+    width:200px;
+    height:100px;
+    border:  1px solid red;
+}

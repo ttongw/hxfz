@@ -1,0 +1,296 @@
+﻿.FoodMenu {
+    background: url(../img/fxhd_bg.jpg) no-repeat center -120px;
+    position: relative;
+    padding-bottom: 80px;
+}
+* {
+    box-sizing: border-box;
+}
+*, li, ol, ul {
+    margin: 0;
+    padding: 0;
+        padding-bottom: 0px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Hiragino Sans GB', 'Open Sans', consolas, 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif, tahoma;
+}
+body {
+    font-family: 'Hiragino Sans GB', 'Open Sans', consolas, 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif, tahoma;
+}
+body {
+    font-family: 'Hiragino Sans GB','Open Sans',consolas,'Microsoft YaHei','微软雅黑',STHeiti,'WenQuanYi Micro Hei',SimSun,sans-serif,tahoma;
+}
+.goto-top:hover, body {
+    color: #555;
+}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+html {
+    font-size: 10px;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+.FoodMenu .content {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #eee;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.FoodMenu .content .menu {
+
+    margin-bottom: 20px;
+
+}
+.FoodMenu .content .menu .zhonglei {
+
+    background-color: rgba(226,97,104,.5);
+    padding: 10px;
+
+}
+.FoodMenu .zhonglei b {
+
+    float: left;
+    font-weight: 400;
+    margin-top: 3px;
+    font-size: 16px;
+
+}
+.FoodMenu .zhonglei .info {
+
+    overflow: hidden;
+
+}
+.FoodMenu .zhonglei .info a {
+
+    margin: 0 5px 5px 5px;
+    padding: 3px 10px;
+    color: #555;
+    float: left;
+    font-size: 16px;
+
+}
+a {
+
+    color: #935A46;
+
+}
+a, a.gray, a.text, a:hover {
+
+    text-decoration: none;
+
+}
+a {
+
+    background-color: transparent;
+
+}
+hr {
+
+    margin: 20px 0;
+    height: 1px;
+    border: 0;
+    width: 100%;
+    background: #E6EAED;
+
+}
+hr {
+
+    box-sizing: content-box;
+    height: 0;
+
+}
+.FoodMenu .zhonglei .xian {
+
+    margin: 15px 0 20px 0;
+    border-top: 2px solid #fff;
+
+}
+        body{font-family: 'Hiragino Sans GB', 'Open Sans', consolas, 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif, tahoma;}
+         .pagination
+         {
+             float:right;
+         }
+        .pagination>li>a, .pagination>li>span
+        {
+            font-size: 14px;
+            text-decoration: none;
+            display: inline-block;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 20px;
+            border: 1px solid #ddd;
+            color: #666;
+            background-color: #fff;
+            margin-left: 4px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all .2s;
+        }
+        .pagination li a:hover
+        {
+            background:#5eb95e;
+            color: #fff;
+        }
+        .pagecout
+        {
+            float: right;
+            margin-top: 30px;
+            margin-left: 20px;
+
+        }
+        .page-list
+        {
+            margin-top:20px;
+        }
+        .container {
+
+    max-width: 1200px;
+
+}
+.body, .container {
+
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+
+}
+.container {
+
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.bg.white.section, div.white.section, section.white.section {
+
+    box-shadow: 0 0 4px #DDD;
+
+}
+.bg.white, div.white, section.white {
+
+    background-color: #fff;
+
+}
+.one-section {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.rg-board {
+
+    padding: 10px;
+
+}
+.rg-board .rg-board-body {
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+.rg-board .rg-board-body {
+
+    padding: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+
+}
+.page-list {
+
+    margin-top: 20px;
+
+}
+.pagecout {
+
+    float: right;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+.pagination {
+
+    float: right;
+
+}
+.pagination, .rg-form-panel .rg-panel-head {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.pagination, .rg-panel-simple .rg-panel-head .more {
+
+    float: right;
+
+}
+.pagination {
+
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+
+}
+.pagination {
+
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+
+}
+li, ol, ul {
+
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    background: 0 0;
+
+}
+*, li, ol, ul {
+
+    margin: 0;
+    padding: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+
+}
+.paper ol, .paper ul, li, ol, ul {
+
+    list-style: none;
+
+}

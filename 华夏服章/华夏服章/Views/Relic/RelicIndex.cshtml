@@ -1,0 +1,268 @@
+﻿@model 华夏服章.ViewModel.IndexViewModel
+@{
+    ViewBag.Title = "RelicIndex";
+}
+
+
+<link href="~/css/relic/index.css" rel="stylesheet" />
+<link href="~/css/relic/font-awesome.min.css" rel="stylesheet" />
+<link href="~/css/relic/style.css" rel="stylesheet" />
+<link href="~/css/relic/font1.css" rel="stylesheet" />
+<link href="~/css/relic/font2.css" rel="stylesheet" />
+
+<style>
+    .img-box {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+</style>
+<div class="img-box" style="height: 400px;">
+    <img src="~/Photos/ReIndex01.jpg" alt="" class="narrower">
+</div>
+<section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 about-two-grids my-3">
+                <span class="fa fa-bars mb-3" aria-hidden="true"></span>
+                <h4>上衣下裳</h4>
+                <div class="about-para-txt mt-2">
+                    <p>“上衣下裳”——上穿衣下穿裳，裳即是裙。上衣下裳制是缘于古人对天地的崇拜而产生的一种服装形制，是中国古代服装中最基本的、最正统的形制，其产生于黄帝时代并在中国古代社会中延续传承了数千年。</p>
+                </div>
+                <div class="view-buttn mt-md-4 mt-3">
+                    <a href="#" class="btn">Read More </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 about-two-grids my-3">
+                <span class="fa fa-bars mb-3" aria-hidden="true"></span>
+                <h4>通裁制</h4>
+                <div class="about-para-txt mt-2">
+                    <p>为了社会活动方便，汉服男子的制式从衣裳发展到深衣，而分开裁剪再拼接比较麻烦，故发展成了通裁的长衫。隋唐新风开始了华夏衣冠第三种制式的风尚，至宋明，通裁的袍衫、褙子等风行一度。</p>
+                </div>
+                <div class="view-buttn mt-md-4 mt-3">
+                    <a href="#" class="btn">Read More </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 about-two-grids my-3">
+                <span class="fa fa-bars mb-3" aria-hidden="true"></span>
+                <h4>连裳制</h4>
+                <div class="about-para-txt mt-2">
+                    <p>上下连裳的服制也称为“深衣制”。为了恪守上下分开的服装制式，特地分开裁然后再连成一体。深衣起源于先秦，虽然是一件长衣，但华夏先民在裁剪时是把上衣与下裳分开来裁，然后再缝成一体，以表示对传统法度观念的尊承。</p>
+                </div>
+                <div class="view-buttn mt-md-4 mt-3">
+                    <a href="#" class="btn">Read More </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 title-right-side my-3">
+                <div class="rotated-title">
+                    <h3 class="title mb-lg-4 mb-md-3 mb-2"> HXFZ</h3>
+                    <h6 class="title-sub">知多少</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="service py-lg-4 py-md-3 py-sm-3 py-3" id="service">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        @foreach (var p in Model.Relic1)
+        {
+            <div class="row">
+                <div class="col-lg-3 col-md-4 my-3">
+                    <div class="rotated-title">
+                        <h3 class="title mb-lg-4 mb-md-3 mb-2">Relic</h3>
+                        <h6 class="title-sub">Popular</h6>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-8 service-grid-top position-relative my-3">
+                    <img src="~/Photos/@p.Himage" height="150" width="400" alt="news image" class="img-fluid">
+                    <div class="ser-fashion-grid ser-fashion-wthree">
+                        <div class="about-icon mb-md-1 mb-3">
+                            <span class="fa fa-snowflake-o" aria-hidden="true"></span>
+                        </div>
+                        <div class="ser-sevice-grid">
+                            <h4 class="pb-3">@p.name</h4>
+                            <p>@p.describle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mid-row-grids">
+                <div class="col-lg-4 col-md-6 col-sm-6 service-grid-wthree my-4">
+                    <div class="ser-fashion-wthree">
+                        <div class="about-icon mb-md-1 mb-3">
+                            <span class="fa fa-thumbs-o-up" aria-hidden="true"></span>
+                        </div>
+                        <div class="ser-sevice-grid">
+                            <h4 class="pb-1">@p.Rsort.dynasty</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 service-grid-wthree my-4">
+                    <div class="ser-fashion-wthree">
+                        <div class="about-icon mb-md-1 mb-3">
+                            <span class="fa fa-laptop" aria-hidden="true"></span>
+                        </div>
+                        <div class="ser-sevice-grid">
+                            <h4 class="pb-1">@p.RCategory.xingzhi</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 service-grid-wthree my-4">
+                    <div class="ser-fashion-wthree">
+                        <div class="about-icon mb-md-1 mb-3">
+                            <span class="fa fa-smile-o" aria-hidden="true"></span>
+                        </div>
+                        <div class="ser-sevice-grid">
+                            <h4 class="pb-1">@p.zone</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<section class="collection py-lg-4 py-md-3 py-sm-3 py-3">
+
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <!--row -->
+        @foreach (var item in Model.Relic2)
+        {
+            <div class="row">
+
+                <div class="col-lg-5 col-md-5 collection-w3layouts my-3">
+                    <h4>@item.name</h4>
+                    <p class="mt-2">
+                        @item.describle
+                    </p>
+                    <div class="view-buttn mt-lg-5 mt-md-4 mt-3">
+                        <a href="@Url.Action("Details", "Relic", new { relicId = @item.HFId })" class="btn">Read More </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 collective-images position-relative">
+                    <img src="~/Photos/@item.Himage" alt="news image" class="img-fluid">
+                    <div class="position-top-img">
+                        <img src="~/Photos/@item.Imagedetail" height="150" width="400" alt="news image" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 title-right-side my-3">
+                    <div class="rotated-title">
+                        <h3 class="title mb-lg-4 mb-md-3 mb-2">Relic</h3>
+                        <h6 class="title-sub">Historic</h6>
+                    </div>
+                </div>
+            </div>
+        }
+        @foreach (var item in Model.Relic3)
+        {
+            <div class="row mid-row-grids">
+                <div class="col-lg-5 col-md-6 collective-images my-3">
+                    <img src="~/Photos/@item.Himage" height="150" width="400" alt="news image" class="img-fluid">
+                </div>
+                <div class="col-lg-7 col-md-6 collection-w3layouts my-3">
+                    <h4>@item.name</h4>
+                    <p class="mt-2">
+                        @item.describle
+                    </p>
+                    <div class="view-buttn mt-lg-5 mt-md-4 mt-3">
+                        <a href="@Url.Action("Details", "Relic", new { relicId = @item.HFId })" class="btn">Read More </a>
+                    </div>
+                </div>
+            </div>
+        }
+        @foreach (var item in Model.Relic4)
+        {
+            <div class="row">
+                <div class="col-lg-6 col-md-5 collection-w3layouts my-3">
+                    <h4>@item.name</h4>
+                    <p class="mt-2">
+                        @item.describle
+                    </p>
+                    <div class="view-buttn mt-lg-5 mt-md-4 mt-3">
+                        <a href="@Url.Action("Details", "Relic", new { relicId = @item.HFId })" class="btn">Read More </a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 collective-images my-3">
+                    <img src="~/Photos/@item.Himage" height="150" width="400" alt="news image" class="img-fluid">
+                </div>
+                <div class="position-top-three col-md-3 my-3">
+                    <img src="~/Photos/@item.Himage" alt="news image" class="img-fluid">
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+
+<section class="client py-lg-4 py-md-3 py-sm-3 py-3" id="client">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6 col-sm-6 cilent-item text-center my-3">
+                <div class="clients-ile-img">
+                    <img src="~/Photos/tang.jpg" height="100" width="100" alt=" " class="img-fluid">
+                    <div class="clients-color-ile text-center mt-lg-4 mt-3">
+                        <p>
+                            <a href="https://baike.baidu.com/item/唐朝服饰/9512650?fr=aladdin"></a>
+                            由隋入唐中国古代服装发展到全盛时期，政治稳定，经济发达，生产和纺织技术的进步，对外交往的频繁等促使服饰空前繁荣，出前所未有的崭新局面。
+                        </p>
+                        <div class="mt-3 clients-txt-ile">
+                            <h4>唐朝</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 cilent-item text-center my-3">
+                <div class="clients-ile-img">
+                    <img src="~/Photos/song.jpg" height="100" width="100" alt=" " class="img-fluid">
+                    <div class="clients-color-ile text-center mt-lg-4 mt-3">
+                        <p>
+                            <a href="https://baike.baidu.com/item/宋代汉服/4193951"></a>
+                            宋代服饰总体可分官服与民服。官服分朝服和公服。朝服用于朝会及祭祀等重要场合，皆朱衣朱裳，佩带和衬以不同颜色和质地的衣饰，还有相应的冠冕。
+                        </p>
+                        <div class="mt-3 clients-txt-ile">
+                            <h4>宋朝</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 cilent-item text-center my-3">
+                <div class="clients-ile-img">
+                    <img src="~/Photos/ming.jpg" height="100" width="100" alt=" " class="img-fluid">
+                    <div class="clients-color-ile text-center mt-lg-4 mt-3">
+                        <p>
+                            <a href="https://baike.baidu.com/item/明朝服饰/7496232?fr=aladdin"></a>
+                            明太祖朱元璋根据汉族的传统，“上承周汉，下取唐宋”，重新制定了服饰制度。中后期更出现了前代未见的形制款式如立领。
+                        </p>
+                        <div class="mt-3 clients-txt-ile">
+                            <h4>明朝</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-6 title-right-side my-3">
+                <div class="rotated-title">
+                    <h3 class="title mb-lg-4 mb-md-3 mb-2">Dynasty</h3>
+                    <h6 class="title-sub">HOT</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+</script>

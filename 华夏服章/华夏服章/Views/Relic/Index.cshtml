@@ -1,0 +1,65 @@
+﻿@model 华夏服章.ViewModel.IndexViewModel
+@{
+    ViewBag.Title = "Index";
+
+}
+@section style{
+    <link href="~/css/RelicSort.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Hiragino Sans GB', 'Open Sans', consolas, 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif, tahoma;
+        }
+    </style>
+}
+<script src="~/Scripts/jquery-3.1.1.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<div class="FoodMenu">
+    <div class="content">
+        <div class="menu">
+            <div class="zhonglei" id="zhonglei">
+                <b>形制分类：</b>
+                <div class="info">
+                    @Ajax.ActionLink("全部", "Index", "Relic", null)
+                    @foreach (var p in Model.Rsort)
+                    {
+                        @Ajax.ActionLink(p.dynasty, "Index", "Relic", new { genreInfoFrom = p.dynasty }, new AjaxOptions()
+                   {
+                       UpdateTargetId = "Div1",
+                       InsertionMode = InsertionMode.Replace,
+                       HttpMethod = "GET"
+                   })
+                    }
+                </div>
+                @*<b>朝代分类：</b>
+                    <div class="info">
+                        @Ajax.ActionLink("全部", "Index", "Relic", null)
+                        @foreach (var p in Model.RCategory)
+                        {
+                            @Ajax.ActionLink(p.xingzhi, "Index", "Relic", new { genreInfoFrom = p.xingzhi }, new AjaxOptions()
+                       {
+                           UpdateTargetId = "Div1",
+                           InsertionMode = InsertionMode.Replace,
+                           HttpMethod = "GET"
+                       })
+                        }
+                    </div>*@
+
+                <hr />
+                <div class="xian"></div>
+            </div>
+
+        </div>
+        <div class="fashaoyou" id="Div1">
+            @{Html.RenderAction("Index2", "Relic");}
+        </div>
+    </div>
+</div>
+<script>
+
+    $(document).ready(function () {
+        var $zhonglei_a = $('#zhonglei a');
+        $zhonglei_a.click(function () {
+            $(this).addClass('on').siblings().removeClass('on');
+        });
+    });
+</script>

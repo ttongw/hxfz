@@ -1,0 +1,153 @@
+﻿@model 华夏服章.ViewModel.ActivityIndex
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>华夏服章-活动</title>
+    <meta charset="UTF-8">
+
+    <link href="~/Content/css/ActivityIndex.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+
+  
+  </head>
+
+<body>
+    <!--//store-info -->
+    <!-- service -->
+    <section class="service py-lg-4 py-md-4 py-sm-3 py-3" id="service">
+      <img src="~/Photos/18.jpg"  style="width:1300px;height:650px;margin-left:150px"/>
+
+        <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            <h3 class="title text-center mb-2"><br/>最新活动</h3>
+            @foreach (var item in Model.Activity1)
+            {   <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+
+            </div>
+            <div class="row" style="float:left;margin-right:10px;margin-top:25px;margin-bottom:25px;">
+                <div class="col-lg-3 col-md-3 col-sm-3 ser-icon text-center my-3">
+                    <div class="grid-wthree-service" style="width:350px;">
+
+                        <a href="@Url.Action("Details","Activity",new { actiId=item.ActiId })">
+                            <img src="~/Photos/@item.photo" alt="news image" class="img-fluid" style="width: 250px;height: 250px;" />
+
+                        </a> <div class="ser-text-wthree mt-3">
+                            <p style="font-size: 20px;color: darkseagreen;">
+                                @item.Title
+                            </p>
+                            
+                                 @using (Html.BeginForm("SiginUp", "Activity", new { actiId = @item.ActiId }, FormMethod.Post, new { id = "pinglun", @class = "postbox" }))
+                                 {
+                                     <a href="javascript:document.getElementById('pinglun').submit()" class="u-btn btn-postcmt">
+
+                                         活动报名
+                                     </a>
+                                 }
+
+                    </div>
+                </div>
+                     </div>
+                
+                
+                 <br /><br /><br />
+        </div>
+            }
+      </div>
+    </section>
+    <!--//service -->
+    <!-- vegetable-info -->
+    <section class="veg-info py-lg-4 py-md-4 py-sm-3 py-3">
+        <br /><br /><br />  <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+            <div class="row">
+               
+
+        <div class="col-lg-7">
+                    <img src="~/Photos/28.jpg" alt="news image" class="img-fluid"style="width:600px;height:360px;margin-top:50px;margin-bottom:5px;"/>
+                </div>
+               @foreach (var item in Model.Activity3)
+               { <div class="col-lg-5 veg-list-text">
+
+                    <div class="row mb-2">
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-7 text-right py-2 py-1 w3three-veg-org">
+                            <h6>参加人数：@item.attendnumber</h6>
+                            <h5 class="my-2">@item.Title</h5>
+                            <p>@item.photodetail</p>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-5 p-0">
+                            <a href="@Url.Action("Details","Activity",new { actiId=item.ActiId })">
+
+                                <img src="~/Photos/@item.photo" alt="news image" class="img-fluid" style="width: 150px;height: 150px;" />
+                       </a>
+                                </div>
+                    </div>
+                   
+                   
+                </div>
+           } </div>
+        </div>
+    </section>
+    <!--//vegetable-info -->
+    <!-- blog -->
+    
+    <section class="blog py-lg-5 py-md-4 py-sm-3 py-3" id="blog">
+        <div class="container py-lg-5 py-md-4 py-sm-4 py-3"><br/>
+            <h3 class="title text-center mb-2">专题推荐</h3>
+            <div class="title-w3ls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+                <p>
+                    华夏服章别具一格的特色<br/>
+                </p>
+            </div>
+            <div class="row">
+                @foreach(var item in Model.Activity2){
+                 <div class="blog-wthree-color col-lg-4 position-relative my-3">
+                    <div class="w3ls-post-img">
+                        <a href="@Url.Action("Details","Activity",new { actiId=item.ActiId })">
+
+                            <img src="~/Photos/@item.photo" class="img-fluid" alt="" style="width: 350px;height: 235px;">
+                      
+                            </a>
+                             <div class="blog-info">
+                                <a href="#about">
+                                    <ul>
+                                        <li>JUL</li>
+                                        <li>15</li>
+                                    </ul>
+                                </a>
+                            </div>
+</div>
+                    <div class="blog-txt-info">
+                        <h4 class="mb-2">
+                            <a href="#about"> <p style="font-size: 20px;color: darkseagreen;">@item.Title</p> </a>
+                        </h4>
+
+                        <div class="news-date-list pt-2">
+
+                        </div>
+                    </div>
+                </div>
+               }
+               
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <br /><br /><br />
+    
+    <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+    </script>
+
+
+</body>
+
+</html>
+

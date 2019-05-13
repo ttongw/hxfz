@@ -1,0 +1,56 @@
+﻿
+@using PagedList.Mvc
+@model PagedList.IPagedList<Models.Relic>
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .img-box {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+</style>
+<div class="img-box" style="height: 400px;">
+    <img src="~/Photos/ReIndex01.jpg" alt="" class="narrower">
+</div>
+
+<div class="gtco-section">
+    <div class="gtco-container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+                <h2>文物之声</h2>
+                <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var p in Model)
+            {
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <a href="..@p.Himage" class="fh5co-card-item image-popup">
+                        <figure>
+                            <img src="~/Photos/@p.Himage" alt="Image" class="img-responsive">
+                        </figure>
+                        <div class="fh5co-text">
+                            <h2>@p.name</h2>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<div class="page-list">
+    <div class="pagecout">Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount</div>
+    @Html.PagedListPager(Model, page => Url.Action("Index2", "Relic", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }), PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(
+             new AjaxOptions
+             {
+                 HttpMethod = "GET",
+                 InsertionMode = InsertionMode.Replace,
+                 UpdateTargetId = "Div1"
+             }))
+</div>

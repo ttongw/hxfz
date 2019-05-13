@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HanFuModelStoreContainer" CdmEntityContainer="HanFuEntities">
+    <EntitySetMapping Name="Activity">
+      <EntityTypeMapping TypeName="HanFuModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="ActiId" ColumnName="ActiId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="rules" ColumnName="rules" />
+          <ScalarProperty Name="prize" ColumnName="prize" />
+          <ScalarProperty Name="SeId" ColumnName="SeId" />
+          <ScalarProperty Name="attendnumber" ColumnName="attendnumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ancomment">
+      <EntityTypeMapping TypeName="HanFuModel.Ancomment">
+        <MappingFragment StoreEntitySet="Ancomment">
+          <ScalarProperty Name="AncomId" ColumnName="AncomId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="AnswerId" ColumnName="AnswerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ancompraise">
+      <EntityTypeMapping TypeName="HanFuModel.Ancompraise">
+        <MappingFragment StoreEntitySet="Ancompraise">
+          <ScalarProperty Name="priseId" ColumnName="priseId" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="AncomId" ColumnName="AncomId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Anreply">
+      <EntityTypeMapping TypeName="HanFuModel.Anreply">
+        <MappingFragment StoreEntitySet="Anreply">
+          <ScalarProperty Name="AnrepId" ColumnName="AnrepId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo1" ColumnName="photo1" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="AncomId" ColumnName="AncomId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Answer">
+      <EntityTypeMapping TypeName="HanFuModel.Answer">
+        <MappingFragment StoreEntitySet="Answer">
+          <ScalarProperty Name="AnswerId" ColumnName="AnswerId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="An_down" ColumnName="An_down" />
+          <ScalarProperty Name="An_upvote" ColumnName="An_upvote" />
+          <ScalarProperty Name="An_click" ColumnName="An_click" />
+          <ScalarProperty Name="An_downId" ColumnName="An_downId" />
+          <ScalarProperty Name="An_upvoteId" ColumnName="An_upvoteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arcomment">
+      <EntityTypeMapping TypeName="HanFuModel.Arcomment">
+        <MappingFragment StoreEntitySet="Arcomment">
+          <ScalarProperty Name="AcomId" ColumnName="AcomId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Arreply">
+      <EntityTypeMapping TypeName="HanFuModel.Arreply">
+        <MappingFragment StoreEntitySet="Arreply">
+          <ScalarProperty Name="ArrepId" ColumnName="ArrepId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="ArcomId" ColumnName="ArcomId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Article">
+      <EntityTypeMapping TypeName="HanFuModel.Article">
+        <MappingFragment StoreEntitySet="Article">
+          <ScalarProperty Name="ArticleId" ColumnName="ArticleId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="Ar_down" ColumnName="Ar_down" />
+          <ScalarProperty Name="Ar_upvote" ColumnName="Ar_upvote" />
+          <ScalarProperty Name="Ar_click" ColumnName="Ar_click" />
+          <ScalarProperty Name="Ar_downId" ColumnName="Ar_downId" />
+          <ScalarProperty Name="Ar_upvoteId" ColumnName="Ar_upvoteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttendActivity">
+      <EntityTypeMapping TypeName="HanFuModel.AttendActivity">
+        <MappingFragment StoreEntitySet="AttendActivity">
+          <ScalarProperty Name="AttenId" ColumnName="AttenId" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="ActiId" ColumnName="ActiId" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="zuopin" ColumnName="zuopin" />
+          <ScalarProperty Name="prisenumber" ColumnName="prisenumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cart">
+      <EntityTypeMapping TypeName="HanFuModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="CartId" ColumnName="CartId" />
+          <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Concern">
+      <EntityTypeMapping TypeName="HanFuModel.Concern">
+        <MappingFragment StoreEntitySet="Concern">
+          <ScalarProperty Name="ConId" ColumnName="ConId" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="UsrA" ColumnName="UsrA" />
+          <ScalarProperty Name="UsrB" ColumnName="UsrB" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gcomment">
+      <EntityTypeMapping TypeName="HanFuModel.Gcomment">
+        <MappingFragment StoreEntitySet="Gcomment">
+          <ScalarProperty Name="GcomId" ColumnName="GcomId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Good">
+      <EntityTypeMapping TypeName="HanFuModel.Good">
+        <MappingFragment StoreEntitySet="Good">
+          <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+          <ScalarProperty Name="Gname" ColumnName="Gname" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="number" ColumnName="number" />
+          <ScalarProperty Name="describle" ColumnName="describle" />
+          <ScalarProperty Name="GSortId" ColumnName="GSortId" />
+          <ScalarProperty Name="SeId" ColumnName="SeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GSort">
+      <EntityTypeMapping TypeName="HanFuModel.GSort">
+        <MappingFragment StoreEntitySet="GSort">
+          <ScalarProperty Name="GSortId" ColumnName="GSortId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Manger">
+      <EntityTypeMapping TypeName="HanFuModel.Manger">
+        <MappingFragment StoreEntitySet="Manger">
+          <ScalarProperty Name="ManId" ColumnName="ManId" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItems">
+      <EntityTypeMapping TypeName="HanFuModel.OrderItems">
+        <MappingFragment StoreEntitySet="OrderItems">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="UsrName" ColumnName="UsrName" />
+          <ScalarProperty Name="UsrPhone" ColumnName="UsrPhone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="note" ColumnName="note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="HanFuModel.Orders">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="OrderTime" ColumnName="OrderTime" />
+          <ScalarProperty Name="Sum" ColumnName="Sum" />
+          <ScalarProperty Name="UsrName" ColumnName="UsrName" />
+          <ScalarProperty Name="UsrPhone" ColumnName="UsrPhone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="note" ColumnName="note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pcomment">
+      <EntityTypeMapping TypeName="HanFuModel.Pcomment">
+        <MappingFragment StoreEntitySet="Pcomment">
+          <ScalarProperty Name="PcomId" ColumnName="PcomId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="PhId" ColumnName="PhId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Photograph">
+      <EntityTypeMapping TypeName="HanFuModel.Photograph">
+        <MappingFragment StoreEntitySet="Photograph">
+          <ScalarProperty Name="PhId" ColumnName="PhId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="paishe" ColumnName="paishe" />
+          <ScalarProperty Name="chujing" ColumnName="chujing" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="ph_down" ColumnName="ph_down" />
+          <ScalarProperty Name="ph_upvote" ColumnName="ph_upvote" />
+          <ScalarProperty Name="ph_click" ColumnName="ph_click" />
+          <ScalarProperty Name="ph_downId" ColumnName="ph_downId" />
+          <ScalarProperty Name="ph_upvoteId" ColumnName="ph_upvoteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phpraise">
+      <EntityTypeMapping TypeName="HanFuModel.Phpraise">
+        <MappingFragment StoreEntitySet="Phpraise">
+          <ScalarProperty Name="priseId" ColumnName="priseId" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="phId" ColumnName="phId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Preply">
+      <EntityTypeMapping TypeName="HanFuModel.Preply">
+        <MappingFragment StoreEntitySet="Preply">
+          <ScalarProperty Name="PrepId" ColumnName="PrepId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="PcomId" ColumnName="PcomId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RCategory">
+      <EntityTypeMapping TypeName="HanFuModel.RCategory">
+        <MappingFragment StoreEntitySet="RCategory">
+          <ScalarProperty Name="RCategoryId" ColumnName="RCategoryId" />
+          <ScalarProperty Name="xingzhi" ColumnName="xingzhi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Relic">
+      <EntityTypeMapping TypeName="HanFuModel.Relic">
+        <MappingFragment StoreEntitySet="Relic">
+          <ScalarProperty Name="HFId" ColumnName="HFId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="Himage" ColumnName="Himage" />
+          <ScalarProperty Name="describle" ColumnName="describle" />
+          <ScalarProperty Name="zone" ColumnName="zone" />
+          <ScalarProperty Name="Imagedetail" ColumnName="Imagedetail" />
+          <ScalarProperty Name="RsortId" ColumnName="RsortId" />
+          <ScalarProperty Name="RCategoryId" ColumnName="RCategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rsort">
+      <EntityTypeMapping TypeName="HanFuModel.Rsort">
+        <MappingFragment StoreEntitySet="Rsort">
+          <ScalarProperty Name="RsortId" ColumnName="RsortId" />
+          <ScalarProperty Name="dynasty" ColumnName="dynasty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seller">
+      <EntityTypeMapping TypeName="HanFuModel.Seller">
+        <MappingFragment StoreEntitySet="Seller">
+          <ScalarProperty Name="SeId" ColumnName="SeId" />
+          <ScalarProperty Name="SImage" ColumnName="SImage" />
+          <ScalarProperty Name="SeName" ColumnName="SeName" />
+          <ScalarProperty Name="fan" ColumnName="fan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usr">
+      <EntityTypeMapping TypeName="HanFuModel.Usr">
+        <MappingFragment StoreEntitySet="Usr">
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="UsrName" ColumnName="UsrName" />
+          <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vcomment">
+      <EntityTypeMapping TypeName="HanFuModel.Vcomment">
+        <MappingFragment StoreEntitySet="Vcomment">
+          <ScalarProperty Name="VcomId" ColumnName="VcomId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="VideoId" ColumnName="VideoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Video">
+      <EntityTypeMapping TypeName="HanFuModel.Video">
+        <MappingFragment StoreEntitySet="Video">
+          <ScalarProperty Name="VideoId" ColumnName="VideoId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Writing" ColumnName="Writing" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="VsortId" ColumnName="VsortId" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="V_down" ColumnName="V_down" />
+          <ScalarProperty Name="V_upvote" ColumnName="V_upvote" />
+          <ScalarProperty Name="V_click" ColumnName="V_click" />
+          <ScalarProperty Name="V_downId" ColumnName="V_downId" />
+          <ScalarProperty Name="V_upvoteId" ColumnName="V_upvoteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vpraise">
+      <EntityTypeMapping TypeName="HanFuModel.Vpraise">
+        <MappingFragment StoreEntitySet="Vpraise">
+          <ScalarProperty Name="priseId" ColumnName="priseId" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="videoId" ColumnName="videoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vreply">
+      <EntityTypeMapping TypeName="HanFuModel.Vreply">
+        <MappingFragment StoreEntitySet="Vreply">
+          <ScalarProperty Name="VrepId" ColumnName="VrepId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="photo1" ColumnName="photo1" />
+          <ScalarProperty Name="photodetail" ColumnName="photodetail" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="VcomId" ColumnName="VcomId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vsort">
+      <EntityTypeMapping TypeName="HanFuModel.Vsort">
+        <MappingFragment StoreEntitySet="Vsort">
+          <ScalarProperty Name="VsortId" ColumnName="VsortId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_ShopCar">
+      <EntityTypeMapping TypeName="HanFuModel.View_ShopCar">
+        <MappingFragment StoreEntitySet="View_ShopCar">
+          <ScalarProperty Name="GoodId" ColumnName="GoodId" />
+          <ScalarProperty Name="GName" ColumnName="GName" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="CartId" ColumnName="CartId" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="UsrId" ColumnName="UsrId" />
+          <ScalarProperty Name="UsrName" ColumnName="UsrName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="FinalPrice" ColumnName="FinalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="View_UserInfo">
+      <EntityTypeMapping TypeName="HanFuModel.View_UserInfo">
+        <MappingFragment StoreEntitySet="View_UserInfo">
+          <ScalarProperty Name="ConId" ColumnName="ConId" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="UsrA" ColumnName="UsrA" />
+          <ScalarProperty Name="UsrB" ColumnName="UsrB" />
+          <ScalarProperty Name="UsrName" ColumnName="UsrName" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Usrname2" ColumnName="Usrname2" />
+          <ScalarProperty Name="Sex2" ColumnName="Sex2" />
+          <ScalarProperty Name="Photo2" ColumnName="Photo2" />
+          <ScalarProperty Name="phone2" ColumnName="phone2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ShopCar_Orders" FunctionName="HanFuModel.Store.ShopCar_Orders" />
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,89 @@
+﻿@model  Models.Activity
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="~/Content/css/activitydetails.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Content/js/activityprise.js"></script>
+    <title>
+    </title>
+    </head>
+    <body>
+        
+        <div id="mainer">
+            <div id="center">
+            <img src="../../Photos/12.png"style="width:1150px">
+
+                <br><br><br> <p class="f20"> <strong>&nbsp;&nbsp;@Model.Title</strong></p>
+
+
+
+                <div class="describe">
+                    <p style="text-align: center;"><br />@Model.Content</p>
+                </div>
+
+                <div class="item">
+                    <p class="title">参赛规则</p>
+                    <div class="info">
+                        <p>@Model.rules</p>
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <p class="title">奖项设置</p>
+                    <div class="info">
+                        <p>
+                        @Html.Raw(@Model.prize)</p>
+
+                    </div>
+                </div>
+                <div class="item">
+                    <p class="title">时间安排</p>
+                    <div class="info">
+                        <p>
+                            提交时间：2018年02月01日 ~ 2018年03月02日
+                        </p>
+                        <p>
+                            初赛时间：2018年03月03日 ~ 2018年03月09日
+                        </p>
+                        <p>
+                            决赛时间：2018年03月10日 ~ 2018年03月14日
+                        </p>
+                        <p>
+                            公布时间：2018年03月15日
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <p class="title">本期赞助</p>
+                    <a href="/click?type=lifeshop&id=375" target="_blank"><img class="store" src="https://pic.hanfugou.com/web/2018/1/29/1/6b8936bffee540a2bfe005d118888c94.jpeg" /></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="dianzan">
+            <div class="out">
+                <div>
+                      <div class="btn" data-key="on">
+                           <i></i>@*<b>0</b>*@
+                        </div>  
+                     
+                    <p style="text-align:center;color:grey">点个赞再走吧</p>
+                    <div class="di">
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+   </body>
+</html>

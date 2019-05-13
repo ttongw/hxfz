@@ -1,0 +1,342 @@
+﻿.create {
+        background: #fae8c8;
+        width: 100%;
+        position: relative;
+        z-index: 500;
+        margin-top:25px;
+    }
+
+
+    #preview .img, img {
+        width: 638px;
+        height: 398px;
+    }
+
+
+#preview {
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    background: #fbfbfb url('../photos/32.jpg') 251px 134px no-repeat;
+   
+    border: #ccc solid 1px;
+    width: 638px;
+    height: 398px;
+    background-color: #f7f7f7;
+
+    margin-right: 10px;
+    cursor: pointer;
+    /*display: inline;*/
+}
+
+     #preview .img, img {
+        width: 638px;
+        height: 398px;
+    }
+
+        #preview input {
+            width: 638px;
+            height: 398px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 90;
+            opacity: 0;
+            display: block;
+            cursor: pointer;
+        }
+
+        #preview p {
+            font-size: 12px;
+            color: #a1a1a1;
+        }
+
+            #preview p.p1 {
+                margin-top: 74px;
+                font-size: 14px;
+                margin-bottom: 3px;
+                color: #5b5b5b;
+            }
+
+
+
+    #previewVideo, .embed, embed {
+        width: 638px;
+        height: 398px;
+    }
+
+    #previewVideo {
+        position: relative;
+        width: 392px;
+        height: 275px;
+        /*margin: 0 auto 10px auto;*/
+        background: url('../photos/32.jpg') no-repeat center 72px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+        #previewVideo:hover {
+            background-position: center -222px;
+        }
+
+        #previewVideo input {
+            width: 392px;
+            height: 275px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 90;
+            opacity: 0;
+            display: block;
+            cursor: pointer;
+        }
+
+    .shangchuan {
+        position: absolute;
+        left: 0;
+        bottom: 25px;
+        width: 392px;
+        height: 38px;
+        line-height: 38px;
+  
+        font-size: 18px;
+        color: #444;
+        cursor: pointer;
+    }
+
+    .Ingredient {
+        width: 500px;
+        height: 300px;
+    }
+
+    .main {
+        width: 990px;
+        margin: 0px auto;
+    }
+
+    .bbtitles {
+        height: 120px;
+        line-height: 120px;
+        font-size: 24px;
+        color: #222;
+     
+        position: relative;
+        display: block;
+    }
+
+    .item1 {
+        width: 990px;
+        background: #fff;
+        padding-bottom: 40px;
+    }
+
+    .uploadbox {
+        padding: 30px 50px 50px;
+        padding-right: 0px;
+        width: 740px;
+        position: relative;
+    }
+
+    .swiper-container {
+        height: 340px;
+        width: 990px;
+        margin-left: 5px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .uploadimg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .uploaditem {
+    
+         padding-bottom: 30px;
+    }
+
+        .uploaditem h5 {
+            font-size: 14px;
+            color: #333;
+            line-height: 14px;
+            height: 34px;
+        }
+
+        .uploaditem .row1_box {
+            height: 44px;
+           
+        }
+
+    .input_text_item {
+        height: 44px;
+        line-height: 44px;
+        background: #fff;
+        width: 482px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+  
+        position: relative;
+    }
+
+    .input_text_item1 {
+        height: 44px;
+        line-height: 44px;
+        background: #fff;
+        width: 120px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+      
+        position: relative;
+    }
+
+    .textareaitem {
+        height: 180px;
+    
+        width: 860px;
+        background: #fff;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+    }
+
+    .textareaitem1 {
+        width: 860px;
+        background: #fff;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+    }
+
+        .textareaitem textarea {
+            padding: 14px;
+            border: 1px solid #ddd;
+            height: 160px;
+            width: 640px;
+            font-size: 14px;
+            color: #333;
+            overflow: auto;
+        }
+
+    .stepitem {
+        height: 180px;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .stepnum {
+        height: 180px;
+        width: 100px;
+        font-size: 60px;
+        color: #aaa;
+        /*font-family: Arial, Helvetica, sans-serif;*/
+        font-weight: bold;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        line-height: 180px;
+    }
+
+    .stepload {
+        height: 180px;
+        width: 180px;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+        /*background: #ccc;*/
+    }
+    .yulanimg .img,img
+    {
+        height: 170px;
+        width: 180px;
+
+    }
+    .yulanimg {
+        height: 170px;
+        width: 180px;
+        border: 1px solid #d8d8d7;
+        background: #fbfbfb url('../Photos/32.jpg') 40px 34px no-repeat;
+        border: #ccc solid 1px;
+        position:relative;
+ 
+    }
+
+        .yulanimg input {
+             height: 170px;
+            width: 180px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 90;
+            opacity: 0;
+            display: block;
+            cursor: pointer;
+          
+        }
+        .stepright {
+    height: 180px;
+    width: 596px;
+    margin-left: 10px;
+    display: inline-block;
+    *display: inline;
+    float:right;
+    *zoom: 1;
+    vertical-align: top;
+}
+.stepright textarea {
+    height: 170px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    width: 570px;
+    font-size: 14px;
+    color: #333;
+    margin-top: 0px;
+    overflow: auto;
+}
+.uploadsubmit_item {
+    height: 70px;
+    width: 220px;
+    margin: 50px auto;
+     text-align:center;
+}
+.uploadsubmit_item input {
+    display: block;
+    height: 70px;
+    width: 220px;
+    background: #f7671e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #e90808;
+     text-align:center;
+}
+     
+
+
+ .fabu a
+    {
+        top:550px;
+        right:300px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: block;
+        width: 150px;
+        height: 40px;
+        background:rgba(255,106,0,0.7);
+       border-radius:5px;
+       text-align:center;
+       padding-top:6px;
+       font-size:20px;
+       color:#fff;
+        position:absolute;
+    }

@@ -1,0 +1,67 @@
+﻿@using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder
+@using System.Web.UI.WebControls
+@model 华夏服章.ViewModel.UserCenterViewModel
+@{
+    ViewBag.Title = "UserCenter";
+}
+
+<link href="~/css/center.css" rel="stylesheet" />
+
+<script src="https://static.hanfugou.com/js/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<div class="main_head">
+    <div class="bg" style="background-image:url(../../Photos/ucIndex.jpg)"></div>
+
+    <div class="uinfo">
+        @foreach (var item in Model.Usr1)
+        {
+            <div class="userhead">
+                <img src="~/Photos/@item.Photo" class="head shadow" alt="">
+            </div>
+            <p class="uname shadow_text mt10">
+                @item.UsrName
+            </p>
+            <p class="mt10">
+                <span class="font_white ml10 font_gray f12 shadow_text">
+                    @item.Address
+                </span>
+            </p>
+            <p class="mt10 ml20 mr20 shadow_text">
+                还不知道怎么描述寄己 (╯▽╰)╭
+            </p>
+            <p class="mt20 shadow_text">
+                粉丝&nbsp;@Model.UsrB&nbsp;&nbsp;·&nbsp;&nbsp;关注&nbsp;@Model.UsrB
+            </p>
+        }
+    </div>
+
+
+</div>
+<div class="main_menu_box">
+    <div class="main_menu js_mainmenu">
+        <a class="active" data-otype="">全部</a>
+        @Html.Partial("_Index")
+        <a data-otype="album">摄影</a>
+        @{Html.RenderAction("_Photograph", "Usrs");}
+        <a data-otype="topic">问答</a>
+        @{Html.RenderAction("_Answer", "Usrs");}
+        <a data-otype="video">视频</a>
+        @{Html.RenderAction("_Video", "Usrs");}
+        <a data-otype="word">文章</a>
+        @{Html.RenderAction("_Article", "Usrs");}
+
+    </div>
+</div>
+<div class="main_content">
+    <div class="trend_list_box">
+        <ul class="trend_list grid"></ul>
+    </div>
+</div>
+<script>
+    $(function () {
+        trend.trendlist("user", {"username": "721691948"});
+    });
+</script>
+
+
