@@ -47,9 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IActivity.cs" />
+    <Compile Include="IAncomment.cs" />
+    <Compile Include="IAnreply.cs" />
+    <Compile Include="IAnswer.cs" />
+    <Compile Include="IArcomment.cs" />
+    <Compile Include="IArreply.cs" />
+    <Compile Include="IArticle.cs" />
+    <Compile Include="IPcomment.cs" />
+    <Compile Include="IPhotograph.cs" />
+    <Compile Include="IPreply.cs" />
     <Compile Include="IRelic.cs" />
     <Compile Include="IRsort.cs" />
     <Compile Include="IUsr.cs" />
+    <Compile Include="IVcomment.cs" />
+    <Compile Include="IVideo.cs" />
+    <Compile Include="IVreply.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -41,10 +41,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActivityManager.cs" />
+    <Compile Include="AncommentManager.cs" />
+    <Compile Include="AnreplyManager.cs" />
+    <Compile Include="AnswerManager.cs" />
+    <Compile Include="ArcommentManager.cs" />
+    <Compile Include="ArreplyManager.cs" />
+    <Compile Include="ArticleManager.cs" />
+    <Compile Include="PcommentManager.cs" />
+    <Compile Include="PhotographManager.cs" />
+    <Compile Include="PreplyManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelicManager.cs" />
     <Compile Include="RsortManager.cs" />
     <Compile Include="UsrManager.cs" />
+    <Compile Include="VcommentManager.cs" />
+    <Compile Include="VideoManager.cs" />
+    <Compile Include="VreplyManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DALFactory\DALFactory.csproj">
