@@ -85,9 +85,8 @@
                     @foreach (var item in Model.Relic1)
                     {
                         <div class="col-lg-4 col-md-4 col-sm-6">
-                            <a href="@Url.Action("RelicDetail","Relic",new { })" class="fh5co-card-item image-popup">
+                            <a href="~/Photos/@item.Himage" class="fh5co-card-item image-popup">
                                 <figure>
-                                    <div class="overlay"><i class="ti-plus"></i></div>
                                     <img src="~/Photos/@item.Himage" alt="Image" class="img-responsive">
                                 </figure>
                                 <div class="fh5co-text">

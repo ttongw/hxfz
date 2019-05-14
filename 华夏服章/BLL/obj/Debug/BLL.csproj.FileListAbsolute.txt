@@ -42,3 +42,17 @@ D:\项目\工作室项目\华夏服章\BLL\bin\Debug\Models.pdb
 D:\项目\工作室项目\华夏服章\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\项目\工作室项目\华夏服章\BLL\obj\Debug\BLL.dll
 D:\项目\工作室项目\华夏服章\BLL\obj\Debug\BLL.pdb
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\BLL.dll
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\BLL.pdb
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\DAL.dll
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\DALFactory.dll
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\IDAL.dll
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\Models.dll
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\EntityFramework.dll
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\DALFactory.pdb
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\DAL.pdb
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\IDAL.pdb
+F:\华夏服章文件\hxfz\华夏服章\BLL\bin\Debug\Models.pdb
+F:\华夏服章文件\hxfz\华夏服章\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+F:\华夏服章文件\hxfz\华夏服章\BLL\obj\Debug\BLL.dll
+F:\华夏服章文件\hxfz\华夏服章\BLL\obj\Debug\BLL.pdb
